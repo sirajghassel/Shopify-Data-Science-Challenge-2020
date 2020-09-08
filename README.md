@@ -9,12 +9,12 @@ There are outliers in the dataset which gave an AOV of 3145. This is illustrated
    
 b) What metric would you report for this dataset?
 
-To treat such outliers, a floor and cap technique of quantiles was used. The floor was set to 10th percentile and the cap at 90th percentile. At the 10th percentile, a value of 133.0 was produced and 531 for the 90th percentile. After flooring and capping, the new skew is 0.408. This value lies between -1 and +1 indicating a normal distribution of the data. 
+To treat such outliers, a floor and cap technique of quantiles was used. The floor was set to 10th percentile and the cap at the 90th percentile. At the 10th percentile, a value of 133.0 was produced and 531 for the 90th percentile. After flooring and capping, the new skew is 0.408. This value lies between -1 and +1 indicating a normal distribution of the data. 
 
 
 c) What is its value?
 
-The value is 296.31. This is a more realistic value for the cost of     sneakers. 
+The value is 296.31. This is a more realistic value for the cost of sneakers. 
 
 
 
