@@ -1,4 +1,4 @@
-# Shopify-Data-Science-Challenge-2020
+# Shopify-Data-Science-Challenge-2021
 Winter 2021 Data Science Intern Challenge
 
 Question 1: Data_Analysis.ipynb
@@ -44,13 +44,19 @@ b)
   
 c) 
 
-  SELECT ProductName FROM Products
-  WHERE ProductID =
-    (SELECT ProductID FROM OrderDetails
-  WHERE OrderID =
-      (SELECT OrderID FROM Orders
-  WHERE CustomerID =
-      (SELECT CustomerID FROM Customers
-  WHERE Country ='Germany')));
+  SELECT ProductName
+  From Products as P
+      INNER JOIN 
+      OrderDetails as OD
+      ON P.ProductID = OD.ProductID
+          INNER JOIN
+          Orders as O
+          ON OD.OrderID = O.OrderID
+              INNER JOIN
+              Customers as C
+              ON O.OrderID = C.CustomerID
+                       INNER JOIN  C.CustomerID = C.Country 
+  WHERE C.Country= 'Germany';
 
-  Answer: 
+
+  Answer: Syntax Error(missing operator). I've tried the query a couple of different ways, but I kept getting the same error. 
