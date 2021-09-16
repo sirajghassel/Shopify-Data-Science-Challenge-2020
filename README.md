@@ -33,14 +33,11 @@ a) How many orders were shipped by Speedy Express in total?
 
 b) What is the last name of the employee with the most orders?
 
-  SELECT LastName
-  FROM Employees
-  WHERE employeeID =
-    (SELECT MAX(employeeID.num)
-        FROM (SELECT count(*) AS num
-              FROM Orders) employeeID);
+  SELECT Employees.LastName,COUNT(Orders.EmployeeID) AS MostOrders FROM Orders
+  LEFT JOIN Employees ON Orders.EmployeeID = Employees.EmployeeID
+  GROUP BY LastName;
 
-  Answer: It populated 0 records. 
+  Answer: Peacock with 40 orders.
   
 c) 
 
