@@ -20,7 +20,7 @@ The value is 296.31. This is a more realistic value for the cost of sneakers.
 
 Question 2:
 
-a) 
+a) How many orders were shipped by Speedy Express in total?
 
   SELECT Count(ShipperID)  
   FROM Orders 
@@ -31,7 +31,7 @@ a)
 
   Answer: 54
 
-b) 
+b) What is the last name of the employee with the most orders?
 
   SELECT LastName
   FROM Employees
