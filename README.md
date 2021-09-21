@@ -1,5 +1,5 @@
-# Shopify-Data-Science-Challenge-2021
-Winter 2021 Data Science Intern Challenge
+# Shopify-Data-Science-Challenge-2022
+Winter 2022 Data Science Intern Challenge
 
 Question 1: Data_Analysis.ipynb
 
